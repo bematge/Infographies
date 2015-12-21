@@ -40,11 +40,7 @@
         display: inline-block;
         background-color: #EFEFEF;
     }
-    /* Couleur de fond des blocs */
-    
-    .blanc {
-        background-color: white;
-    }
+
     /*    TITRES   */
     /* Style des titres */
     
@@ -79,6 +75,13 @@
         display: inline-block
     }
     /* Couleurs activables en background des titres */
+    
+    /* Couleur de fond des blocs */
+    
+    .blanc {
+        background-color: white; color:#000;
+    }
+
     
     .rouge {
         background-color: red;
