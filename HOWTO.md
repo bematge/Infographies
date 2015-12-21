@@ -2,7 +2,7 @@
 
 ## Structure de l'infographie
 
-Une infographie est constituée de plusieurs blocs. Chaque bloc contient un titre, et un ou plusieurs items. 
+Une infographie est constituée de plusieurs blocs `<div>`. Chaque bloc contient d'autres `<div>` : au moins un titre, et un ou plusieurs items. 
 
 ### Blocs
 Les **blocs** se positionnent les uns à coté des autres et/ou les les uns en dessous des autres. 
