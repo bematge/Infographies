@@ -1,0 +1,699 @@
+    /* import du CSS de remise à zéro des marges */
+    
+    @import url('reset.css');
+    body {
+        font-family: Arial;
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .triangle:after {
+        content: url(triangle.svg);
+        position: absolute;
+    }
+    /* Style des blocs */
+    
+    .b3-3,
+    .b2-3,
+    .b1-2,
+    .b1-3 {
+        display: inline-block;
+        background-color: #EFEFEF;
+    }
+
+    /*    TITRES   */
+    /* Style des titres */
+    
+    .t3-3,
+    .t2-3,
+    .t1-2,
+    .t1-3 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .i3-3,
+    .i2-3,
+    .i1-2,
+    .i1-3 {
+        display: inline-block;
+    }
+    
+    .alignhaut {
+        vertical-align: top
+    }
+    
+    .alignmilieu {
+        vertical-align: center
+    }
+    
+    .alignbas {
+        vertical-align: text-bottom
+    }
+    
+    .inline {
+        display: inline-block
+    }
+    /* Couleurs activables en background des titres */
+    
+    /* Couleur de fond des blocs */
+    
+    .blanc {
+        background-color: white; color:#000;
+    }
+
+    
+    .rouge {
+        background-color: red;
+        color: #FFF;
+    }
+    
+    .orange {
+        background-color: orange;
+        color: #FFF;
+    }
+    
+    .bleu {
+        background-color: blue;
+        color: #FFF;
+    }
+    
+    .bleufonce {
+        background-color: darkblue;
+        color: #FFF;
+    }
+    
+    .violet {
+        background-color: purple;
+        color: #FFF;
+    }
+    
+    .vert {
+        background-color: green;
+        color: #FFF;
+    }
+    /* hauteur minimale des items dans les blocks */
+    
+    .haut50 {
+        min-height: 50px;
+    }
+    
+    .haut100 {
+        min-height: 100px;
+    }
+    
+    .haut150 {
+        min-height: 150px;
+    }
+    
+    .haut200 {
+        min-height: 200px;
+    }
+    
+    .haut250 {
+        min-height: 250px;
+    }
+    
+    .haut280 {
+        min-height: 280px;
+    }
+    
+    .haut300 {
+        min-height: 300px;
+    }
+    /* Texte, taille couleur et position */
+    
+    .taille1 {
+        font-size: 1em;
+    }
+    
+    .taille2 {
+        font-size: 1.2em;
+    }
+    
+    .taille3 {
+        font-size: 1.6em;
+    }
+    
+    .taille4 {
+        font-size: 2.2em;
+    }
+    
+    .taille5 {
+        font-size: 2.8em;
+    }
+    
+    .gras {
+        font-weight: bolder;
+    }
+    
+    .lignehaute {
+        line-height: 1.4em;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .lignereduite {
+        line-height: 0.8em
+    }
+    
+    .titrehaut {
+        padding: 20px 0px 10px 0px;
+    }
+    
+    .majuscule {
+        text-transform: uppercase
+    }
+    
+    .centrer {
+        text-align: center;
+    }
+    
+    .grossemarge {
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    .flottedroit {
+        float: right;
+        padding: 10px;
+    }
+    
+    .flottegauche {
+        float: left;
+        padding: 10px;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .i1-3 span {
+        font-weight: bold;
+    }
+    
+    .texterouge {
+        color: red;
+    }
+    
+    .texteorange {
+        color: orange;
+    }
+    
+    .textebleu {
+        color: blue;
+    }
+    
+    .textebleufonce {
+        color: darkblue;
+    }
+    
+    .texteviolet {
+        color: purple;
+    }
+    
+    .textevert {
+        color: green;
+    }
+    /*  Changement de couleur du bouton au hover */
+    
+    .boutonclic.bleu:hover {
+        background-color: darkblue;
+    }
+    
+    .boutonclic.rouge:hover {
+        background-color: darkred;
+    }
+    
+    .boutonclic.vert:hover {
+        background-color: darkgreen;
+    }
+    
+    .boutonclic.violet:hover {
+        background-color: darkpurple;
+    }
+    
+    .boutonclic {
+        display: inline-block;
+        border-radius: 5%;
+        border: 0px;
+        text-decoration: none;
+    }
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* DEBUT DE MEDIA QUERY +de 960PX  */
+    
+    @media screen and (min-width:960px) {
+        body {
+            max-width: 960px;
+        }
+        .triangle:after {
+            left: 200px;
+            margin-bottom: 100px;
+        }
+        .triangle > div {
+            margin-top: 20px;
+        }
+        /*    BLOCS   */
+        /* Style des blocs */
+        .b3-3,
+        .b2-3,
+        .b1-2,
+        .b1-3 {
+            margin: 10px 0px 10px 0px;
+        }
+        /* Taille minimale des blocks */
+        .b3-3 {
+            width: 960px;
+        }
+        .b2-3 {
+            width: 620px;
+        }
+        .b1-2 {
+            width: 465px;
+        }
+        .b1-3 {
+            width: 300px;
+        }
+        /* Style des titres */
+        .t3-3,
+        .t2-3,
+        .t1-2,
+        .t1-3 {
+            min-height: 30px;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        /* style des blocs d'items */
+        .i3-3,
+        .i2-3,
+        .i1-2,
+        .i1-3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* Largeur minimale des items dans les blocks */
+        .i3-3 {
+            width: 920px;
+        }
+        .i2-3 {
+            width: 600px;
+        }
+        .i1-2 {
+            width: 430px;
+        }
+        .i1-3 {
+            width: 290px;
+        }
+        .i3-3 h3,
+        .i2-3 h3,
+        .i1-2 h3,
+        .i1-3 h3,
+        .i3-3 p,
+        .i2-3 p,
+        .i1-2 p,
+        .i1-3 p {}
+        /* position des items dans le block */
+        .premier {
+            margin: 10px 5px 0px 10px;
+            padding: 0px 5px 0px 10px;
+        }
+        .milieu {
+            margin: 10px 5px 0px 5px;
+            padding: 0px 5px 0px 5px;
+        }
+        .dernier {
+            margin: 10px 10px 0px 5px;
+            padding: 0px 10px 0px 5px;
+        }
+        .blocgauche {
+            margin-right: 12px;
+        }
+        .blocdroit {
+            margin-left: 13px;
+        }
+        /* Style de base du bouton */
+        .boutonclic {
+            padding: 8px 25px 8px 25px;
+            margin: 10px 10px 10px 10px;
+            font-size: 0.8em;
+        }
+    }
+    /* FIN DE MEDIA QUERY +de 960PX   */
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* DEBUT DE MEDIA QUERY +de 780PX et -de 960px  */
+    
+    @media screen and (min-width:780px) and (max-width: 960px) {
+        body {
+            max-width: 780px;
+        }
+        .taille3 {
+            font-size: 1.4em
+        }
+        .triangle:after {
+            left: 200px;
+            margin-bottom: 100px;
+        }
+        .triangle > div {
+            margin-top: 20px;
+        }
+        /*    BLOCS   */
+        /* Style des blocs */
+        .b3-3,
+        .b2-3,
+        .b1-2,
+        .b1-3 {
+            margin: 10px 0px 10px 0px;
+        }
+        /* Taille minimale des blocks */
+        .b3-3 {
+            width: 780px;
+        }
+        .b2-3 {
+            width: 500px;
+        }
+        .b1-2 {
+            width: 380px;
+        }
+        .b1-3 {
+            width: 245px;
+        }
+        /* Style des titres */
+        .t3-3,
+        .t2-3,
+        .t1-2,
+        .t1-3 {
+            min-height: 30px;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        /* style des blocs d'items */
+        .i3-3,
+        .i2-3,
+        .i1-2,
+        .i1-3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* Largeur minimale des items dans les blocks */
+        .i3-3 {
+            width: 780px;
+        }
+        .12-3 {
+            width: 500px;
+        }
+        .i1-2 {
+            width: 360px;
+        }
+        .i1-3 {
+            width: 230px;
+        }
+        .i3-3 h3,
+        .i2-3 h3,
+        .i1-2 h3,
+        .i1-3 h3,
+        .i3-3 p,
+        .i2-3 p,
+        .i1-2 p,
+        .i1-3 p {}
+        /* position des items dans le block */
+        .premier {
+            margin: 10px 5px 0px 10px;
+            padding: 0px 5px 0px 10px;
+        }
+        .milieu {
+            margin: 10px 5px 0px 5px;
+            padding: 0px 5px 0px 5px;
+        }
+        .dernier {
+            margin: 10px 10px 0px 5px;
+            padding: 0px 10px 0px 5px;
+        }
+        .blocgauche {
+            margin-right: 8px;
+        }
+        .blocdroit {
+            margin-left: 7px;
+        }
+        /* Style de base du bouton */
+        .boutonclic {
+            padding: 8px 25px 8px 25px;
+            margin: 10px 10px 10px 10px;
+            font-size: 0.8em;
+        }
+    }
+    /* FIN DE MEDIA QUERY +de 780PX   */
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* DEBUT DE MEDIA QUERY +de 640PX et -de 780PX  */
+    
+    @media screen and (min-width:640px) and (max-width:780px) {
+        body {
+            max-width: 640px;
+        }
+        .triangle:after {
+            display: absolute;
+            left: 150px;
+            top: 83px;
+            margin-bottom: 80px;
+        }
+        .triangle > div {
+            margin-top: 20px;
+        }
+        /*    BLOCS   */
+        /* Style des blocs */
+        .b3-3,
+        .b2-3,
+        .b1-2,
+        .b1-3 {
+            margin-bottom: 20px;
+        }
+        /* Taille minimale des blocks */
+        .b3-3 {
+            width: 600px;
+        }
+        .b2-3 {
+            width: 420px;
+        }
+        .b1-2 {
+            width: 310px;
+        }
+        .b1-3 {
+            width: 140px;
+        }
+        /* Style des titres */
+        .t3-3,
+        .t2-3,
+        .t1-2,
+        .t1-3 {
+            min-height: 30px;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        /* style des blocs d'items */
+        .i3-3,
+        .i2-3,
+        .i1-2,
+        .i1-3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+        /* Largeur minimale des items dans les blocks */
+        .i3-3 {
+            min-width: 600px;
+        }
+        .i2-3 {
+            min-width: 400px;
+        }
+        .i1-2 {
+            min-width: 290px;
+        }
+        .i1-3 {
+            min-width: 100px;
+        }
+        .i3-3 h3,
+        .i2-3 h3,
+        .i1-2 h3,
+        .i1-3 h3,
+        .i3-3 p,
+        .i2-3 p,
+        .i1-2 p,
+        .i1-3 p {
+            padding: 10px 5px 10px 5px;
+        }
+        /* position des items dans le block */
+        .premier {
+            margin-right: 10px;
+        }
+        .milieu {
+            margin-top: -10px;
+        }
+        .dernier {
+            position: relative;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        /* Style de base du bouton */
+        .boutonclic {
+            padding: 8px 25px 8px 25px;
+            margin: 10px 10px 10px 10px;
+            font-size: 0.8em;
+        }
+        .
+    }
+    /* FIN DE MEDIA QUERY +de 640PX et -de 780PX    */
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* ****************************************************************************************** */
+    /* DEBUT DE MEDIA QUERY -de 640PX */
+    
+    @media screen and (max-width:640px) {
+        .triangle:after {
+            left: 80px;
+            margin-bottom: 80px;
+        }
+        .triangle > div {
+            margin-top: 20px;
+        }
+        /*    BLOCS   */
+        /* Style des blocs */
+        .b3-3,
+        .b2-3,
+        .b1-2,
+        .b1-3 {
+            margin-bottom: 20px;
+        }
+        /* Taille minimale des blocks */
+        .b3-3 {
+            width: 300px;
+        }
+        .b2-3 {
+            width: 300px;
+        }
+        .b1-2 {
+            width: 300px;
+        }
+        .b1-3 {
+            width: 300px;
+        }
+        /* Style des titres */
+        .t3-3,
+        .t2-3,
+        .t1-2,
+        .t1-3 {
+            min-height: 30px;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        /* style des blocs d'items */
+        .i3-3,
+        .i2-3,
+        .i1-2,
+        .i1-3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* Largeur minimale des items dans les blocks */
+        .i3-3 {
+            min-width: 280px;
+        }
+        .i2-3 {
+            min-width: 280px;
+        }
+        .i1-2 {
+            min-width: 280px;
+        }
+        .i1-3 {
+            min-width: 280px;
+        }
+        .i3-3 h3,
+        .i2-3 h3,
+        .i1-2 h3,
+        .i1-3 h3,
+        .i3-3 p,
+        .i2-3 p,
+        .i1-2 p,
+        .i1-3 p {
+            padding: 10px 10px 10px 10px;
+        }
+        /* position des items dans le block */
+        .premier {
+            margin: 10px;
+        }
+        .milieu {
+            margin: 10px;
+        }
+        .dernier {
+            margin: 10px;
+        }
+        /* Style de base du bouton */
+        .boutonclic {
+            padding: 8px 25px 8px 25px;
+            margin: 10px 10px 10px 10px;
+            font-size: 0.8em;
+        }
+        /* rectification "grosse marge" */
+        .grossemarge {
+            width: 90%;
+            margin: auto;
+        }
+        /* Texte, taille couleur et position */
+        .taille1 {
+            font-size: 0.8em;
+        }
+        .taille2 {
+            font-size: 1em;
+            line-height: 1em;
+            margin: 6px 0px 6px 0px;
+        }
+        .taille3 {
+            font-size: 1.2em;
+            line-height: 1.2em;
+            margin: 12px 0px 12px 0px;
+        }
+        .taille4 {
+            font-size: 1.6em;
+            line-height: 1.6em;
+            margin: 18px 0px 18px 0px;
+        }
+        .taille5 {
+            font-size: 2em;
+            line-height: 2em;
+            margin: 22px 0px 22px 0px;
+        }
+        /* reset des marges premier / dernier  */
+        .premier {
+            margin-right: 0px;
+        }
+        .milieu {
+            margin: 0px 10px 0px 10px;
+        }
+        .dernier {
+            margin-left: 10px;
+        }
+    }
