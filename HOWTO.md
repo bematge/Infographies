@@ -39,6 +39,11 @@ Enfin, les **items** sont des éléments positionés à l'intérieur des blocs. 
                 <div class="i1-3"> Item 2 </div>
                 <div class="i1-3"> Item 3 </div>
         </div>`
+
+Le système de marges n'est pas automatique. S'il y a plus d'un item dans un bloc, il faut ajouter une classe à chaque item 
+* premier : pour le premier item 
+* milieu : pour celui du milieu (1/3)
+* dernier : pour le dernier
         
 ## Hauteur des blocs
 Pour obtenir un alignement haut et bas harmonieux, il peut être nécessaire de forcer les blocs ou les items à prendre une hauteur particulière s'ils n'ont pas des éléments de la même hauteur.
