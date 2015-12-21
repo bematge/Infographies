@@ -35,9 +35,9 @@ Enfin, les **items** sont des éléments positionés à l'intérieur des blocs. 
 
         `<div class="b3-3">
             <h1 class="t3-3">Titre de 3/3</h1> 
-                <div class="i1-3"> Item 1 </div>
-                <div class="i1-3"> Item 2 </div>
-                <div class="i1-3"> Item 3 </div>
+                <div class="i1-3 premier"> Item 1 </div>
+                <div class="i1-3 milieu"> Item 2 </div>
+                <div class="i1-3 dernier"> Item 3 </div>
         </div>`
 
 Le système de marges n'est pas automatique. S'il y a plus d'un item dans un bloc, il faut ajouter une classe à chaque item 
