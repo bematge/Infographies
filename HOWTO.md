@@ -12,7 +12,8 @@ Pour définir la taille d'un bloc, on utilisera les classes suivantes :
 * b1-2 : bloc de 1/2 soit 50% de la largeur
 * b1-3 : bloc de 1/3 soit 33% de la largeur
         
-        `<div class="b3-3"> Bloc de 3/3 </div>`
+        `<div class="b3-3"> Bloc de 3/3 
+        </div>`
         
 ### Titres
 Les **titres** se positionnent à l'intérieur des blocs en utilisant les balises `<h1>` à `<h6>` pour marquer leur importance syntaxique. Pour définir en plus la largeur du titre (indépendante de son niveau hiérarchique), on utilise la même logique que pour les blocs : 
